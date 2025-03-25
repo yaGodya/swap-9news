@@ -243,7 +243,6 @@ footer.globalFooter {
   background-color: #fff;
   border-top: 1px solid #eaeaea;
   margin-top: 48px;
-  padding: 20px;
 }
 
 footer .footerBody {
@@ -302,8 +301,7 @@ footer .footerInfo {
 }
 
 footer .footerLogo {
-  width: 100%;
-  fill: #fff;
+  cursor: pointer;
 }
 
 footer .basicFooter .footerColumn a {
