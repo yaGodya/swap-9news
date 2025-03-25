@@ -1,0 +1,332 @@
+header {
+  margin-bottom: 40px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header.globalHeader {
+  background-color: #fff;
+  color: #000;
+  font-family: inherit;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .mainWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  max-width: 1280px;
+  position: relative;
+}
+
+header .vf-tray-widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .vf-tray-navigation {
+  background-color: #fff;
+  padding: 10px;
+}
+
+header .vf-tray-nav-button {
+  color: #e60505;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .vf-tray-nav-button:hover {
+  text-decoration: underline;
+}
+
+header .menuNavWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+header .logoWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+header .menuButtonWrapper {
+  display: flex;
+  gap: 18px;
+}
+
+header .moreItemsList {
+  display: none;
+}
+
+header .menuText {
+  font-weight: 700;
+  margin-left: 8px;
+}
+header .menuText,
+header .searchText,
+header .profileText {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .profileText:hover {
+  color: #0074ad;
+  transition: all 0.3s ease-in-out;
+}
+
+header .logoWrapper:hover {
+  opacity: 0.5;
+  transition: 0.1s ease-in-out;
+}
+
+header .headerSearchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .profileButtonWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+}
+
+header .sideMenu {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+
+header .navLink .icon {
+  height: 20px;
+}
+
+header .sighIn {
+  margin-left: 40px;
+}
+
+header .search,
+header .sighIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+header .menuButton:hover svg path,
+header .menuButton:hover .menuText,
+header .navLink.search:hover svg path,
+header .navLink.search:hover .searchText,
+header .navLink.sighIn:hover svg path,
+header .navLink.sighIn:hover svg ellipse,
+header .navLink.sighIn:hover .profileText {
+  fill: #0074ad;
+  color: #0074ad;
+  transition: 0.1s ease-in-out;
+}
+
+header .search:hover,
+header .sighIn:hover {
+  color: #0074ad;
+  transition: all 0.3s ease-in-out;
+}
+
+header .landingNav {
+  background-color: #e60505;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .landingWrapper {
+  width: 100%;
+  max-width: 1280px;
+}
+
+header .subNavList {
+  padding: 5px;
+  height: 48px;
+  max-width: 1280px;
+}
+
+header .subNavListItem a {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px;
+}
+
+header .subNavListItem a ::not:first-child {
+  padding: 5px;
+}
+
+header .subNavListItem a:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+header .subNavListItem a:active {
+  color: #e60505;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+header .subNavList {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header .subNavList :nth-child(2) a {
+  color: #e60505;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 2px;
+}
+
+header .iconNews {
+  cursor: pointer;
+}
+
+header .moreButton {
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  padding: 6px 8px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease-in-out;
+  border-color: white;
+}
+
+header .moreButton svg {
+  display: flex;
+}
+
+header .moreButton svg path {
+  fill: white;
+  transition: fill 0.2s ease-in-out;
+}
+
+@media (max-width: 798px) {
+  header .menuButton .menuText,
+  header .navLink.search .searchText,
+  header .navLink.sighIn .profileText {
+    display: none;
+  }
+}
+
+footer.globalFooter {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  margin-top: 48px;
+  padding: 20px;
+}
+
+footer .footerBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+footer .footerColumn {
+  flex: 1 1 130px;
+  font-size: 0.85em;
+  padding: 16px;
+}
+
+footer .footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+}
+
+footer .footerLink {
+  color: #0550c8;
+  text-decoration: none;
+}
+
+footer .footerLink:hover {
+  text-decoration: underline;
+}
+
+footer .basicFooter {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+footer .basicFooter .footerColumn {
+  align-self: center;
+}
+footer .radioCanada:hover {
+  text-decoration: underline;
+}
+
+footer .basicFooter .copyright {
+  font-size: 14px;
+}
+footer .footerInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .footerLogo {
+  width: 100%;
+  fill: #fff;
+}
+
+footer .basicFooter .footerColumn a {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footerInfo {
+    padding: 0;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  footer .basicFooter .footerColumn a {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 810px) {
+  header .navLink {
+    display: none;
+  }
+}
+
+.section-header__headline {
+  color: #3c3c3c;
+}
