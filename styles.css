@@ -1,3 +1,4 @@
+
 header {
   margin-bottom: 40px;
 }
@@ -25,6 +26,7 @@ header .mainWrapper {
   height: 48px;
   max-width: 1280px;
   position: relative;
+  padding: 0 16px;
 }
 
 header .vf-tray-widget {
@@ -160,6 +162,7 @@ header .landingNav {
 header .landingWrapper {
   width: 100%;
   max-width: 1280px;
+  padding: 0 16px;
 }
 
 header .subNavList {
@@ -229,14 +232,6 @@ header .moreButton svg {
 header .moreButton svg path {
   fill: white;
   transition: fill 0.2s ease-in-out;
-}
-
-@media (max-width: 798px) {
-  header .menuButton .menuText,
-  header .navLink.search .searchText,
-  header .navLink.sighIn .profileText {
-    display: none;
-  }
 }
 
 footer.globalFooter {
@@ -319,12 +314,39 @@ footer .basicFooter .footerColumn a {
     align-self: center;
   }
 }
-@media screen and (max-width: 810px) {
-  header .navLink {
+@media screen and (max-width: 900px) {
+  .subNavList > *:nth-last-child(2):not(:first-child):not(:last-child) {
     display: none;
   }
 }
 
+@media screen and (max-width: 850px) {
+  .subNavList > *:nth-last-child(3):not(:first-child):not(:last-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .subNavList > *:nth-last-child(4):not(:first-child):not(:last-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .subNavList > *:not(:first-child):not(:last-child) {
+    display: none;
+  }
+
+  header .menuButton .menuText,
+  header .navLink.search .searchText,
+  header .navLink.sighIn .profileText {
+    display: none;
+  }
+
+  header .sighIn {
+  margin-left: 10px;
+}
+}
 .section-header__headline {
   color: #3c3c3c;
 }
